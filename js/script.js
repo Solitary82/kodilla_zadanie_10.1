@@ -1,7 +1,7 @@
 "use strict";
 
 $(document).ready(function(){
-    var span = $("span");
+    var span = $('span');
     var paragraphs = $('p');
     
     span.each(function(index, element) {
@@ -12,9 +12,9 @@ $(document).ready(function(){
     paragraphs.each(function(index, element) {
         var button = '<button class="btn" data-tmp="' + index + '">Click me</button>';
         $(element).append(button);
-        $("button").css('background-color', 'white').css('text-transform','uppercase');
-        $("button").click(function() {
-            alert($(this).attr("data-tmp"));
+        $('button').css('background-color', 'white').css('text-transform','uppercase');
+        $('button').click(function() {
+            alert($(this).attr('data-tmp'));
         });
     });
 });
