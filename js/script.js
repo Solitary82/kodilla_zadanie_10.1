@@ -1,5 +1,3 @@
-"use strict";
-
 $(document).ready(function(){
     var span = $('span');
     var paragraphs = $('p');
@@ -13,9 +11,10 @@ $(document).ready(function(){
         var button = '<button class="btn" data-tmp="' + index + '">Click me</button>';
         $(element).append(button);
         $('button').css('background-color', 'white').css('text-transform','uppercase');
-        $('button').click(function() {
-            alert($(this).attr('data-tmp'));
-        });
+    });
+    
+    $('button').click(function() {
+        alert($(this).attr('data-tmp'));
     });
 });
 
